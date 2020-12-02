@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class Ball : MonoBehaviour
 {
     public float velocidad= 30.0f;
-    bool finJuego = false;
+    public bool finJuego = false;
+    public bool gano = false;
     public Text textGanador;
     public Text textPerdedor;
     public Text textInstrucciones;
@@ -66,6 +67,7 @@ public class Ball : MonoBehaviour
             fuenteDeAudio.Play();
            /// this.gameObject.SetActive (false);
            finJuego =  true;
+           gano = true;
             textInstrucciones.gameObject.SetActive(true);
             
             transform.position = new Vector2(0 , -32);

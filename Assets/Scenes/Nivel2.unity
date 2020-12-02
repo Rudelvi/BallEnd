@@ -1805,6 +1805,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a42930fa446b404e9888b4a7d77e737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nivel: Nivel2
+  siguienteNivel: Nivel2
+  ball: {fileID: 1943768254}
 --- !u!4 &1727331216
 Transform:
   m_ObjectHideFlags: 0
@@ -2191,6 +2194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 30
+  finJuego: 0
+  gano: 0
   textGanador: {fileID: 157573773}
   textPerdedor: {fileID: 704742358}
   textInstrucciones: {fileID: 505880477}

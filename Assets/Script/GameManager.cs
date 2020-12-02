@@ -6,11 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public string nivel;
+    public string siguienteNivel;
+    public Ball ball;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -18,7 +17,26 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P) || Input.GetMouseButton(0)){
             //Cargo la escena de Juego
             // Nombre de la scene del juego, en mi caso es SampleScene
-            SceneManager.LoadScene("SampleScene");
+            
+            
+
+            if(nivel!="Inicio"){
+
+                if(ball.finJuego){
+
+                    if(ball.gano){
+                        SceneManager.LoadScene(siguienteNivel);
+                    }else
+                    {
+                        SceneManager.LoadScene(nivel);
+                    }
+                    
+                }
+            }else
+            {
+                SceneManager.LoadScene(siguienteNivel);
+            }
+            
         }
 
         
