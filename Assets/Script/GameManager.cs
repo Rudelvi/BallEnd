@@ -14,11 +14,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) || Input.GetMouseButton(0)){
-            //Cargo la escena de Juego
-            // Nombre de la scene del juego, en mi caso es SampleScene
-            
-            
+        if (Input.GetMouseButton(0)){
 
             if(nivel!="Inicio"){
 
@@ -38,6 +34,25 @@ public class GameManager : MonoBehaviour
             }
             
         }
+
+        if(Input.GetKeyDown(KeyCode.R)){
+            if(ball.finJuego)
+            {
+                SceneManager.LoadScene(nivel);
+            }
+            
+        }
+
+        if(Input.GetKeyDown(KeyCode.M)){
+            SceneManager.LoadScene("Inicio");
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            Application.Quit();
+            Debug.Log("salio del juego");
+        }
+
+
 
         
     }
