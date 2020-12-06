@@ -7,11 +7,13 @@ using UnityEngine.UI;
 public class Ball : MonoBehaviour
 {
     public float velocidad= 30.0f;
+    public float puntajeAcumulado = 0.0f;
     public bool finJuego = false;
     public bool gano = false;
     public Text textGanador;
     public Text textPerdedor;
     public Text textInstrucciones;
+    public Text textPuntaje;
 
     AudioSource fuenteDeAudio;
 
@@ -71,7 +73,24 @@ public class Ball : MonoBehaviour
             textInstrucciones.gameObject.SetActive(true);
             
             transform.position = new Vector2(0 , -32);
+        }else if( micolision.gameObject.tag == "coleccionableA"){
+           puntajeAcumulado = puntajeAcumulado + 50;
+           textPuntaje.text = puntajeAcumulado + "";
+           micolision.gameObject.SetActive(false);
+
+        }else if( micolision.gameObject.tag == "coleccionableB"){
+           puntajeAcumulado = puntajeAcumulado + 20;
+           textPuntaje.text = puntajeAcumulado + "";
+
+            micolision.gameObject.SetActive(false);
+
+        }else if( micolision.gameObject.tag == "coleccionableR"){
+           puntajeAcumulado = puntajeAcumulado + 10;
+           textPuntaje.text = puntajeAcumulado + "";
+            micolision.gameObject.SetActive(false);
+
         }
+
 
     }
 
