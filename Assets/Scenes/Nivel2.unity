@@ -2187,7 +2187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: Nivel2
-  siguienteNivel: Nivel2
+  siguienteNivel: Fin
   ball: {fileID: 1943768254}
 --- !u!4 &1727331216
 Transform:
@@ -2590,7 +2590,7 @@ MonoBehaviour:
   textPuntaje: {fileID: 1202456069}
   textTemporizador: {fileID: 122010288}
   textPuntajeFinal: {fileID: 2048304248}
-  timeRemaining: 60
+  timeRemaining: 30
   defaultBallPosicion: -91
   audioInicio: {fileID: 8300000, guid: 3bdda6a1639b4124c96f47fd859cd207, type: 3}
   audioPerdedor: {fileID: 8300000, guid: 650677f4c9b7083459fe5bd630cee8c4, type: 3}
