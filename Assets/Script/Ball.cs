@@ -106,7 +106,7 @@ public class Ball : MonoBehaviour
             fuenteDeAudio.clip = audioPuntos;
             fuenteDeAudio.Play();
 
-           puntajeAcumulado = puntajeAcumulado + 50;
+           puntajeAcumulado = puntajeAcumulado + 25;
            textPuntaje.text = puntajeAcumulado + "";
            micolision.gameObject.SetActive(false);
 
@@ -127,7 +127,7 @@ public class Ball : MonoBehaviour
             fuenteDeAudio.clip = audioPuntos;
             fuenteDeAudio.Play();
 
-           puntajeAcumulado = puntajeAcumulado + 10;
+           puntajeAcumulado = puntajeAcumulado + 5;
            textPuntaje.text = puntajeAcumulado + "";
             micolision.gameObject.SetActive(false);
 
