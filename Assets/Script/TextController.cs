@@ -24,7 +24,7 @@ public class TextController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(defaultCredictPosition<500){
+        if(defaultCredictPosition<1000){
             transform.position = new Vector3(460 , defaultCredictPosition,0);
             defaultCredictPosition = defaultCredictPosition+0.5f;
             
