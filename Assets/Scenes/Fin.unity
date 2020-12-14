@@ -499,6 +499,9 @@ MonoBehaviour:
   defaultCredictPosition: -100
   defaultIntruccionesPosition: -81
   defaultTittlePosition: -81
+  defaultHorizontalPosition: 460
+  defaultTituloVerticalPosition: 280
+  defaultInstruccionVerticalPosition: 280
 --- !u!1 &756354282
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,8 +571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Utilizar cursor para desplazar Bola\nHaz click para Jugar \no pulsa Esc
-    para salir."
+  m_Text: Pulsa Esc para salir.
 --- !u!222 &756354285
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -687,7 +689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: Inicio
-  siguienteNivel: Nivel1
+  siguienteNivel: Fin
   ball: {fileID: 0}
 --- !u!4 &2094909895
 Transform:
